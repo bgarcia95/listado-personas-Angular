@@ -4,6 +4,5 @@ export class Persona {
     apellido: string;
     */
 
-    constructor(public nombre:string, public apellido:string) {
-    }
+    constructor(public nombre:string, public apellido:string) {}
 }
