@@ -12,5 +12,16 @@
             <label for="apellido" >Apellido</label>
             <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="form-control" [(ngModel)]="apellidoInput">
         </div>
+        <div class="col">
+            <button type="submit" class="btn btn-primary" (click)="onAgregarPersona()">Agregar</button>
+        </div>
     </form>
+    <hr>
+    <div class="row">
+        <div class="col-xs-12">
+            <div *ngFor="let persona of personas; let i= index">
+                {{i+1}}: {{persona.nombre}} {{persona.apellido}}
+            </div>
+        </div>
+    </div>
 </div>
